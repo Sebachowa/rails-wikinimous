@@ -1,7 +1,8 @@
-<article>
+<div class="container text-center">
   <h1><%= @article.title %></h1>
   <p><%= @article.content%></p>
-</article>
-
-<%= link_to "Edit", edit_article_path(@article), class: "btn btn-warning"%>
-<%= link_to "Destroy", article_path(@article), method: "delete", data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
+  <div class="button-container">
+    <%= link_to "Edit", edit_article_path(@article), class: "btn btn-warning"%>
+    <%= link_to "Destroy", article_path(@article), method: "delete", data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
+  </div>
+</div>
